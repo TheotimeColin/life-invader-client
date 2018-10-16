@@ -1,0 +1,19 @@
+@import './reset.css';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
+  
+:root {
+  --blaze-orange: #fb620f;
+  --crimson-red: #f8190f;
+  
+  --mineshaft-black: #131313;
+  --mercury-grey: #e6e6e6;
+  --pure-white: #f9f9f9;
+  
+  --main-gradient: linear-gradient(45deg, var(--blaze-orange) 0%, var(--crimson-red) 100%);
+  
+  --font-s: 14px/1 'Open Sans';
+  --font-m: 16px/1 'Open Sans';
+  --font-l: 18px/1 'Open Sans';
+  --font-xl: 22px/1 'Open Sans';
+}
