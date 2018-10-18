@@ -1,19 +1,25 @@
 @import './reset.css';
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
-  
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
 :root {
   --blaze-orange: #fb620f;
   --crimson-red: #f8190f;
   
   --mineshaft-black: #131313;
+  --mineshaft-black-60: #13131399;
   --mercury-grey: #e6e6e6;
+  --cloud-grey: #bebebe;
   --pure-white: #f9f9f9;
   
-  --main-gradient: linear-gradient(45deg, var(--blaze-orange) 0%, var(--crimson-red) 100%);
+  --main-gradient: linear-gradient(45deg, var(--crimson-red) 0%, var(--blaze-orange) 100%);
   
-  --font-s: 14px/1 'Open Sans';
-  --font-m: 16px/1 'Open Sans';
-  --font-l: 18px/1 'Open Sans';
-  --font-xl: 22px/1 'Open Sans';
+  --main-font: 'Roboto';
+  
+  --font-xs: 12px/1 var(--main-font);
+  --font-s: 14px/1 var(--main-font);
+  --font-m: 22px/1.4 var(--main-font);
+  --font-l: 26px/1 var(--main-font);
+  --font-xl: 30px/1 var(--main-font);
 }

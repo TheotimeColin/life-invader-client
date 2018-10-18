@@ -1,9 +1,9 @@
 <template>
   <div class="WrapperMain">
-    <div class="WrapperMain_column">
+    <div class="WrapperMain_column WrapperMain_column--left">
       <slot name="left"></slot>
     </div>
-    <div class="WrapperMain_column">
+    <div class="WrapperMain_column WrapperMain_column--center">
       <slot name="center"></slot>
     </div>
   </div>
@@ -16,5 +16,21 @@
 </script>
 
 <style scoped>
-
+  .WrapperMain {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .WrapperMain_column--left {
+    width: 220px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+  .WrapperMain_column--center {
+    flex-grow: 1;
+  }
 </style>
