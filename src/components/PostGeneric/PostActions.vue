@@ -29,7 +29,7 @@
   
   .PostActions_separator--small {
     flex-grow: 0;
-    width: 20px;
+    width: 10px;
   }
   
   .PostActions_item {

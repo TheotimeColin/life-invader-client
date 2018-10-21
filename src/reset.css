@@ -54,7 +54,8 @@ table {
   border-spacing: 0;
 }
   
-input {
+input,
+textarea {
   width: auto;
   font-size: inherit;
   font-family: inherit;

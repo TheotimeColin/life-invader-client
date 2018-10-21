@@ -28,6 +28,8 @@
     background-color: var(--mineshaft-black);
     width: 75px;
     height: 75px;
+    flex-shrink: 0;
+    flex-grow: 0;
   }
   
   .ProfilePicture--small {
