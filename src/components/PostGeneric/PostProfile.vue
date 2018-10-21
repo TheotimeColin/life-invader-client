@@ -1,6 +1,6 @@
 <template>
   <div class="PostProfile">
-    <ProfilePicture />
+    <ProfilePicture :source="user.profile_picture" />
     <ButtonGeneric class="PostProfile_follow" :modifiers="[ 'tiny' ]">Suivre</ButtonGeneric>
   </div>
 </template>
@@ -11,8 +11,11 @@
   import ButtonGeneric from '@/components/ButtonGeneric'
   
   export default {
-    name: "PostBody",
-    components: { ProfilePicture, ButtonGeneric }
+    name: 'PostProfile',
+    components: { ProfilePicture, ButtonGeneric },
+    props: {
+      user: { type: Object, default: () => { profile_picture: '' } }
+    }
   }
 </script>
 
@@ -23,6 +26,6 @@
   }
   
   .PostProfile_follow {
-    margin-top: 22px;
+    margin-top: 12px;
   }
 </style>

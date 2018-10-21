@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <WrapperMain>
+    <WrapperMain v-if="mode == ''">
       <template slot="left">
         <Sidebar />
       </template>
@@ -9,6 +9,10 @@
         <router-view></router-view>
       </template>
     </WrapperMain>
+    <div v-else-if="mode == 'landing'">
+      Welcome
+      <router-link to="/feed">Cheat link</router-link>
+    </div>
   </div>
 </template>
 
@@ -18,7 +22,12 @@
 
   export default {
     name: 'App',
-    components: { WrapperMain, Sidebar }
+    components: { WrapperMain, Sidebar },
+    computed: {
+      mode () {
+        return this.$route.meta.main ? this.$route.meta.main.mode : ''
+      }
+    }
   }
 </script>
 

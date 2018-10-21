@@ -1,17 +1,20 @@
 <template>
-  <div class="ProfilePicture" :class="modifierClasses" :style="{ backgroundImage: `url(${assets.placeholder})` }"></div>
+  <div class="ProfilePicture" :class="modifierClasses" :style="{
+    backgroundImage: `url(${source === '' ? assets.placeholder : source})`
+  }"></div>
 </template>
 
 <script>
   import Classes from '@/mixins/Classes'
   
-  import placeholder from '@/assets/img/tmp/profile.png'
+  import placeholder from '@/assets/img/tmp/profile2.png'
   
   export default {
     name: 'ProfilePicture',
     mixins: [ Classes ],
     props: { 
-      modifiers: { type: Array, default: () => [] }
+      modifiers: { type: Array, default: () => [] },
+      source: { type: String, default: '' }
     },
     data () {
       return {

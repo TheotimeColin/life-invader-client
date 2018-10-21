@@ -8,8 +8,6 @@ export default {
     
   },
   actions: {
-    async registerUser ({ commit }, options) {
-      
-    }
+    
   }
 }

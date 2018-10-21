@@ -5,7 +5,7 @@
     </div>
     <ProfileButton class="Sidebar_profile">Johnny Maggs</ProfileButton>
     <div class="Sidebar_nav">
-      <router-link class="Sidebar_navItem" to="/">Accueil</router-link>
+      <router-link class="Sidebar_navItem" to="/feed">Accueil</router-link>
       <router-link class="Sidebar_navItem" to="/kelly.marland">Mon profil</router-link>
     </div>
   </div>

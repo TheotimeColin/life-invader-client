@@ -1,11 +1,7 @@
 <template>
   <div class="TextArea">
-    <textarea class="TextArea_input" :style="{ height: `${height}px` }" v-model="value" placeholder="Exprimez-vous">
-    </textarea>
-    
-    <textarea class="TextArea_input TextArea_input--resizer" ref="resizer">
-      {{ value }}
-    </textarea>
+    <div class="TextArea_input" @input="(e) => value = e.target.innerText" v-model="value" contenteditable="true">
+    </div>
   </div>
 </template>
 
@@ -14,8 +10,7 @@
     name: 'TextArea',
     data () {
       return {
-        value: '',
-        height: 0
+        value: ''
       }
     },
     watch: {
@@ -42,17 +37,9 @@
     display: block;
     width: 100%;
     overflow: hidden;
-    resize: none;
     border-radius: 4px;
     word-wrap: break-word;
     font: var(--font-m);
-  }
-  
-  .TextArea_input--resizer {
-    position: absolute;
-    width: 100%;
-    visibility: hidden;
-    pointer-events: none;
-    height: 0;
+    background-color: var(--pure-white);
   }
 </style>

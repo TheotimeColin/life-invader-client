@@ -1,8 +1,6 @@
 <template>
   <div class="PostActions">
     <div class="PostActions_separator"></div>
-    <div class="PostActions_item">Suivre Kelly</div>
-    <div class="PostActions_separator PostActions_separator--small"></div>
     <div class="PostActions_item">J'aime</div>
   </div>
 </template>

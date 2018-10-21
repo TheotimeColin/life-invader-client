@@ -1,8 +1,8 @@
 <template>
   <div class="PostGeneric">
-    <PostProfile class="PostGeneric_left" />
+    <PostProfile class="PostGeneric_left" :user="post.user" />
     <div class="PostGeneric_right">
-      <PostBody class="Post_main" :content="post.content" />
+      <PostBody class="Post_main" :post="post" />
       <PostActions />
     </div>
   </div>
