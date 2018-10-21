@@ -2,7 +2,7 @@
   <div id="app">
     <WrapperMain>
       <template slot="left">
-          <Sidebar />
+        <Sidebar />
       </template>
 
       <template slot="center">
@@ -28,7 +28,6 @@
   #app {
     font: var(--font-m);
     color: var(--mineshaft-black);
-    height: 100%;
     min-height: 100vh;
     background-color: var(--pure-white);
   }

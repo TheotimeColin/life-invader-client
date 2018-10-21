@@ -36,7 +36,7 @@
   }
   
   .Sidebar_profile {
-    margin: 0 -10px 0 -35px;
+    margin: 0 0 0 -10px;
     position: relative;
     z-index: 1;
   }

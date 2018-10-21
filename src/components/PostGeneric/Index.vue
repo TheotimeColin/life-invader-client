@@ -1,57 +1,47 @@
 <template>
   <div class="PostGeneric">
-    <ProfilePicture class="PostGeneric_profile" />
-    <div class="PostGeneric_body">
-      <p class="PostGeneric_author">
-        Kelly Markland
-        <span class="PostGeneric_date">Aujourd'hui, à 18h02</span>
-      </p>
-      <div class="PostGeneric_text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Praesent at purus ante. Ut aliquet dolor vitae nulla porttitor pellentesque <HashtagGeneric>#MarkMyWords</HashtagGeneric> <HashtagGeneric>#Crazy</HashtagGeneric>
-      </div>
+    <PostProfile class="PostGeneric_left" />
+    <div class="PostGeneric_right">
+      <PostBody class="Post_main" :content="post.content" />
+      <PostActions />
     </div>
   </div>
 </template>
 
 <script>
-  import ProfilePicture from '@/components/ProfilePicture'
-  import HashtagGeneric from '@/components/HashtagGeneric'
+  import PostProfile from './PostProfile'
+  import PostBody from './PostBody'
+  import PostActions from './PostActions'
   
   export default {
     name: "PostGeneric",
-    components: { ProfilePicture, HashtagGeneric }
+    components: { PostProfile, PostBody, PostActions },
+    props: {
+      post: { type: Object, default: { content: '' } }
+    }
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .PostGeneric {
     display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid var(--mercury-grey);
+    transition: background-color 100ms ease;
+     
+    &:hover {
+      background-color: var(--dreamy-grey);
+    }
   }
   
-  .PostGeneric_profile {
+  .PostGeneric_left {
     flex-grow: 0;
     flex-shrink: 0;
-    margin: 10px;
+    margin-right: 20px;
   }
   
-  .PostGeneric_body {
-    min-height: 120px;
-  }
-  
-  .PostGeneric_author {
-    font: var(--font-s);
-    font-weight: bold;
-    margin: 14px 0 10px;
-  }
-  
-  .PostGeneric_date {
-    font: var(--font-xs);
-    color: var(--cloud-grey);
-    font-weight: normal;
-    margin-left: 5px;
-  }
-  
-  .PostGeneric_text {
-    font: var(--font-m);
+  .PostGeneric_right {
+    flex-grow: 1;
   }
 </style>

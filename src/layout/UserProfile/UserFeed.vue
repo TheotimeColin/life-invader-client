@@ -3,27 +3,23 @@
     class="UserFeed"
   >
     <template slot="left">
-      <Post v-for="post in posts" />
+      <Feed :posts="posts" />
     </template>
     <template slot="right">
-      sxwcwxcwxc
+
     </template>
   </WrapperColumnRight>
 </template>
 
 <script>
   import WrapperColumnRight from '@/components/WrapperGeneric/WrapperColumnRight'
-  import Post from '@/layout/Post'
+  import Feed from '@/components/Feed'
   
   export default {
     name: 'UserFeed',
-    components: { WrapperColumnRight, Post },
-    data () {
-      return {
-        posts: [
-          {}, {}, {}, {}
-        ]
-      }
+    components: { WrapperColumnRight, Feed },
+    props: {
+      posts: { type: Array, default: () => [] }
     }
   }
 </script>

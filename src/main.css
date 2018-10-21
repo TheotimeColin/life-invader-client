@@ -8,17 +8,19 @@
   --crimson-red: #f8190f;
   
   --mineshaft-black: #131313;
-  --mineshaft-black-60: #13131399;
-  --mercury-grey: #e6e6e6;
+  --mineshaft-black-80: #131313cc;
   --cloud-grey: #bebebe;
+  --mercury-grey: #e6e6e6;
+  --dreamy-grey: #f3f3f3;
   --pure-white: #f9f9f9;
   
   --main-gradient: linear-gradient(45deg, var(--crimson-red) 0%, var(--blaze-orange) 100%);
   
   --main-font: 'Roboto';
   
+  --font-xxs: 11px/1 var(--main-font);
   --font-xs: 12px/1 var(--main-font);
-  --font-s: 14px/1 var(--main-font);
+  --font-s: 16px/1 var(--main-font);
   --font-m: 22px/1.4 var(--main-font);
   --font-l: 26px/1 var(--main-font);
   --font-xl: 30px/1 var(--main-font);

@@ -38,6 +38,7 @@
 <style scoped>
   .UserHeader {
     background-size: cover;
+    background-position: center;
   }
   
   .UserHeader_right {
@@ -46,7 +47,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--mineshaft-black-60);
+    background-color: var(--mineshaft-black-80);
   }
   
   .UserHeader_name {

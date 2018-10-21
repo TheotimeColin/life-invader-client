@@ -17,7 +17,7 @@
 
 <style scoped>
   .WrapperMain {
-    max-width: 1200px;
+    max-width: 1400px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -25,7 +25,7 @@
   }
   
   .WrapperMain_column--left {
-    width: 220px;
+    width: 250px;
     flex-grow: 0;
     flex-shrink: 0;
   }

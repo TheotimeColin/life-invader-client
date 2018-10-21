@@ -15,5 +15,6 @@
     display: inline;
     font-weight: bold;
     color: var(--crimson-red);
+    cursor: pointer;
   }
 </style>
